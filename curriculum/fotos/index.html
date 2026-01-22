@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JoMan Group, Lda. | Loja Virtual</title>
+  <style>
+    :root{
+      --primary:#1f2937;
+      --secondary:#111827;
+      --accent:#2563eb;
+      --light:#f3f4f6;
+      --gray:#6b7280;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;}
+    body{background:var(--light);color:#111;}
+
+    /* Top bar */
+    .topbar{
+      background:#0f172a;color:#fff;padding:6px 40px;
+      display:flex;justify-content:space-between;font-size:13px;
+    }
+
+    /* Header */
+    header{
+      background:#fff;padding:15px 40px;
+      display:flex;align-items:center;justify-content:space-between;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+    }
+    header h1{font-size:22px;color:var(--secondary);}
+    nav ul{list-style:none;display:flex;gap:18px;}
+    nav a{text-decoration:none;color:#111;font-weight:bold;}
+    nav a:hover{color:var(--accent);}
+
+    /* Hero */
+    .hero{
+      background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+      height:420px;display:flex;align-items:center;
+    }
+    .hero .hero-box{
+      background:rgba(0,0,0,0.55);color:#fff;
+      margin-left:60px;padding:30px;border-radius:10px;
+      max-width:380px;
+    }
+    .hero h2{font-size:34px;margin-bottom:10px;}
+    .hero p{margin-bottom:15px;}
+    .btn{
+      display:inline-block;background:var(--accent);
+      color:#fff;padding:10px 18px;border-radius:6px;
+      text-decoration:none;font-size:14px;cursor:pointer;
+    }
+
+    /* Info bar */
+    .info-bar{
+      background:#fff;display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:15px;padding:20px 40px;margin-top:-30px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+    .info-item{display:flex;gap:10px;align-items:center;font-size:14px;}
+
+    /* Layout */
+    .container{padding:40px;display:grid;grid-template-columns:260px 1fr;gap:30px;}
+
+    /* Sidebar */
+    aside{background:#fff;padding:20px;border-radius:10px;}
+    aside h3{margin-bottom:15px;font-size:18px;}
+    aside ul{list-style:none;}
+    aside li{padding:8px 0;border-bottom:1px solid #eee;font-size:14px;}
+
+    /* Products */
+    .section-title{font-size:22px;margin-bottom:20px;}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+    .card{
+      background:#fff;border-radius:10px;overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+      transition:transform .2s;
+    }
+    .card:hover{transform:translateY(-4px);}
+    .card img{width:100%;height:190px;object-fit:cover;}
+    .card .info{padding:12px;}
+    .price{color:var(--accent);font-weight:bold;margin:6px 0;}
+
+    footer{
+      background:#0f172a;color:#e5e7eb;padding:40px;
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Bem-vindo à JoMan Group, Lda.</span>
+  <span>📞 +244 939 373 578</span>
+</div>
+
+<header>
+  <h1>JoMan Group</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Roupas</a></li>
+      <li><a href="#">Calçados</a></li>
+      <li><a href="#">Acessórios</a></li>
+      <li><a href="#">Carrinho (0)</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+    <h2>Comprar Roupas</h2>
+    <p>
+Melhores ofertas para você. Moda moderna para homens e mulheres.</p>
+    <a class="btn">Explorar Loja</a>
+  </div>
+</section>
+
+<div class="info-bar">
+  <div class="info-item">🚚 Entrega Rápida</div>
+  <div class="info-item">💳 Pagamento Seguro</div>
+  <div class="info-item">↩️ Devolução Fácil</div>
+  <div class="info-item">📞 Suporte 24/7</div>
+</div>
+
+<div class="container">
+  <aside>
+    <h3>Categorias</h3>
+    <ul>
+      <li>Camisas</li>
+      <li>Calças</li>
+      <li>Vestidos</li>
+      <li>Tênis</li>
+      <li>Sapatos</li>
+      <li>Bolsas</li>
+      <li>Relógios</li>
+    </ul>
+  </aside>
+
+  <main>
+    <h2 class="section-title">Produtos em Destaque</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Camisa Moderna</h4><div class="price">25.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Vestido Elegante</h4><div class="price">40.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Tênis Desportivo</h4><div class="price">60.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Sapato Social</h4><div class="price">55.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Relógio Premium</h4><div class="price">35.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593032465171-8f7cddc8c92d?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Bolsa Feminina</h4><div class="price">28.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Óculos de Sol</h4><div class="price">18.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231693?auto=format&fit=crop&w=800&q=80" />
+        <div class="info"><h4>Cinto de Couro</h4><div class="price">12.000 Kz</div><a class="btn">Adicionar</a></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <div>
+    <h3>JoMan Group, Lda.</h3>
+    <p>Loja virtual de roupas, calçados e acessórios.</p>
+  </div>
+  <div>
+    <h3>Contactos</h3>
+    <p>📞 +244 939 373 578</p>
+    <p>✉️ info@jomangroup.ao</p>
+  </div>
+  <div>
+    <h3>Redes Sociais</h3>
+    <p><a href="https://www.facebook.com/profile.php?id=100063671508972">Facebook</a> | Instagram</p>
+  </div>
+</footer>
+
+</body>
+</html>
